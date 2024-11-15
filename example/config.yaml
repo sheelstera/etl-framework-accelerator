@@ -1,0 +1,32 @@
+data_sources:
+  adls1:
+    abfss_path: "abfss://container@storageaccount.dfs.core.windows.net/path/to/some/file1.csv"
+    format: csv
+    type: adls
+  adls2:
+    abfss_path: "abfss://container@storageaccount.dfs.core.windows.net/path/to/some/file2.tsv"
+    format: tsv
+    type: adls
+
+data_sink:
+  mysink:
+    abfss_path: "abfss://container@storageaccount.dfs.core.windows.net/path/to/some/file3.parquet"
+    format: parquet
+    type: adls
+
+custom_functions:
+  - name: custom_length
+    function: |
+      def custom_length(string):
+          if string:
+              return len(string)
+          return 0
+    return_type: IntegerType
+
+  - name: custom_upper
+    function: |
+      def custom_upper(string):
+          if string:
+              return string.upper()
+          return None
+    return_type: StringType

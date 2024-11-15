@@ -1,0 +1,16 @@
+customer_id,customer_name,membership_status,join_date,last_purchase_date
+1,John Doe,Gold,01/01/2020,15/09/2023
+2,Jane Smith,Silver,05/05/2019,16/09/2023
+3,Michael Jordan,Gold,10/08/2018,17/09/2023
+4,Jack Black,Bronze,10/10/2018,18/09/2023
+5,Linda Johnson,Silver,15/03/2021,19/09/2023
+6,Sam Green,Gold,20/02/2022,20/09/2023
+7,Anne Brown,Platinum,25/12/2015,21/09/2023
+8,Bob White,Silver,01/03/2021,22/09/2023
+9,Charlie Gray,Bronze,02/02/2018,23/09/2023
+10,Donna Blue,Silver,05/09/2020,24/09/2023
+11,Emily Jones,Gold,10/04/2017,25/09/2023
+12,Frank Wright,Silver,18/07/2018,26/09/2023
+13,Grace Hall,Platinum,30/11/2016,27/09/2023
+14,Harry Adams,Gold,14/12/2019,28/09/2023
+15,Isabella Cox,Silver,17/03/2021,29/09/2023

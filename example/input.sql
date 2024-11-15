@@ -1,0 +1,3 @@
+WITH join_result AS (SELECT t1.customer_id, t1.email, t1.phone, t1.date_of_birth, t1.postal_code, t1.transaction_date, t1.order_amount, t1.product_code, t1.account_number, t2.customer_name, t2.membership_status, t2.join_date, t2.last_purchase_date FROM adls1 AS t1 JOIN adls2 AS t2 ON t1.customer_id = t2.customer_id)
+WITH clean AS (SELECT customer_id, email, phone, date_of_birth, postal_code, transaction_date, order_amount, product_code, account_number, custom_upper(customer_name) as customer_name, membership_status FROM join_result)
+SELECT customer_name,sum(order_amount) FROM clean group by customer_name
